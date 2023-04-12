@@ -2,96 +2,112 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
+      value: Andrei Popov
+    - name: Title
+      value: ML Engineer
     - name: Languages
-      value: English, German
+      value: English, Russian
 
-- title: Education
-  type: time_table
-  contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
-      description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
-      description:
-        - Description 1.
-        - Description 2.
+
+- title: Interests
+  type: list
+  contents: 
+    - Computer vision, deep learning, natural language processing, ML ops
+
 
 - title: Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: ML Engineer
+      institution: <a href="https://www.napoleonit.com/">Napoleon IT</a>
+      year: aug 2019 - present
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+        - Successfully enhanced the speed and quality of the retail store's product and price recognition system, resulting in a 20\% improvement in accuracy. (PyTorch, TensorFlow, OpenVino, Flask, XGBoost, Hydra, Docker, Metric Learning)
+        - Development and deployment of a computer vision module for detecting irregularities in production (PyTorch, Nvidia Triton Server, TensorRT, YoloV5, DeepSort, EfficientNet, Docker)
+        - Development and deployment of a system for monitoring and controlling access to the office by face with an additional module of temperature analysis (PyTorch, RetinaFace, Docker)
+        - Development of a system that counts unique visitors to the store through the use of a video camera (PyTorch, OpenCV, Docker)
+    - title: Mentor
+      institution: <a href="https://ai.itmo.ru/">AI Talent Hub</a>
+      year: 2022
       description:
-        - Description 1.
-        - Description 2.
+        - Providing expert guidance to students on deep learning and computer vision-related matters
+        - Conducting thorough evaluations of students' final project submissions
 
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
 
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
-      description:
-
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
-
-- title: Open Source Projects
+- title: Education
   type: time_table
   contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+    - title: MSc
+      institution: Saint Petersburg National Research University of Information Technologies, Mechanics and Optics (ITMO)
+      year: 2022 - present
+      description:
+        - Specialized in deep learning and generative AI
+    - title: BSc
+      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
+      year: 1900
+      description:
+        - Specialized in computer science and mathematics
+        - <b><i>GPA 4.97/5</i></b>
 
-- title: Honors and Awards
+
+- title: Projects
   type: time_table
   contents:
-    - year: 1921
-      items: 
-        - Nobel Prize in Physics 
-        - Matteucci Medal
-    - year: 2029
-      items: 
-        - Max Planck Medal
+    - title: <a href="https://github.com/Late-Dev/Educational-Video-Analytics">Educational Video Analytics</a>
+      year: 2022
+      description: "The system designed for use in educational institutions. It can recognise students' emotions in real-time through video. The following technologies were used in developing the system: face detector (RetinaFace), face tracker (DeepSort), emotion classifier (Deep Alignment Network)."
+    
+    - title: <a href="https://github.com/MADE-Landmarks-Recognition/landmarks-search-app">Landmark Retrieval</a>
+      year: 2022
+      description: "A service for searching for similar landmarks based on a query image was developed. The training utilized a metric-learning approach. The final search is performed using FAISS."
+    
+    - title: <a href="https://github.com/traptrip/yandex_cup_2022_audio_4th_place">Music Track Artist Search</a>
+      year: 2022
+      description: "A collection of anonymized acoustic features from music recordings has been provided. The objective is to identify the most suitable authors. In addition to classification, the model can also be used to evaluate the similarity between different artists and to distinguish different artists but with similar names."
+    
+    - title: <a href="https://github.com/traptrip/ai-areal-photo">Aerial Photos Matching using Deep Learning</a>
+      year: 2022
+      description: "A model was developed that takes an image as input and determines its position and rotation angle on the substrate. The challenge lies in the possibility of the substrate and image being captured at different times of the year or with overlapping clouds."
+    
+    - title: <a href="https://github.com/traptrip/Speech_commands_recognition">Voice Commands Recognition</a>
+      year: 2021
+      description: "Various models were compared for classifying different voice commands, and the ensemble of ResNet18 and EfficientNetB0 showed the best performance. Mel-spectrograms were used as input features."
 
-- title: Academic Interests
-  type: nested_list
-  contents:
-    - title: Topic 1.
-      items: 
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
-      items:
-        - Description 1.
-        - Description 2.
+    - title: <a href="https://github.com/traptrip/speaker_recognition_bot">Speaker Recognition Bot</a>
+      year: 2020
+      description: "A Telegram bot to remember and people by their voice. Speaker recognition is achieved by extracting unique voice features, storing them in a database, and using the K-Nearest Neighbors classifier to assess vector similarity during the inference stage."
 
-- title: Other Interests
-  type: list
+
+- title: Publications
+  type: time_table
+  contents: 
+    - year: 2021
+      descr: <u><i>Popov, Andrey S</u></i>. and Ivanov, Sergey A. Neural Network Models for Russian Language Speaker Recognition. (2021) 2021 International Conference on Quality Management, Transport and Information Security, Information Technologies (IT&QM&IS)
+    
+    - title: <a class="font-weight-bold" href="https://habr.com/ru/post/687646/">How computer vision helps determine the coordinates of satellite images</a> 
+      institution: article on <a class="font-weight-bold" href="https://habr.com">Habr.com</a>
+      year: 2022
+      descr: This article covers how to won the second place in the Digital Breakthrough contest with a solution for automating photo georeferencing. The main insight is that basic solutions are not always good and proven.
+
+
+- title: Competitions and Awards
+  type: time_table
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - title: <a class="font-weight-bold" href="https://hacks-ai.ru/hackathons/757119/">Digital Breakthrough 2022 - "AI to identify students' emotions"</a> 
+      institution: organized by <a href="https://hacks-ai.ru/">Hacks AI</a> 
+      descr: <b><i>1st place</i></b>
+      year: 2022
+
+    - title: <a class="font-weight-bold" href="https://hacks-ai.ru/hackathons/757119/">Digital Breakthrough 2022 - "Aerial Photos Matching"</a> 
+      institution: organized by <a href="https://hacks-ai.ru/">Hacks AI</a> 
+      descr: <b><i>2d place</i></b>
+      year: 2022
+
+    - title: <a class="font-weight-bold" href="https://dsworks.ru/group/1a047e72-4791-45d0-8ee9-44ac9c43bf4b/">Multilingual translation from national languages</a> 
+      institution: organized by <a href="https://ai-journey.ru//">AI Journey</a> 
+      descr: <b><i>2nd place</i></b>
+      year: 2022
+
+    - title: <a class="font-weight-bold" href="https://www.kaggle.com/traptrip">Kaggle - Notebooks Expert</a> 
+      institution: <a href="https://www.kaggle.com/">Kaggle</a> 
+      descr: <b><i>1st place</i></b>
