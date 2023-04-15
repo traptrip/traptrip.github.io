@@ -21,7 +21,7 @@
     - title: ML Engineer
       institution: <a href="https://www.napoleonit.com/">Napoleon IT</a>
       year: aug 2019 - present
-      descriptioniption:
+      description:
         - Successfully enhanced the speed and quality of the retail store's product and price recognition system, resulting in a 20\% improvement in accuracy. (PyTorch, TensorFlow, OpenVino, Flask, XGBoost, Hydra, Docker, Metric Learning)
         - Development and deployment of a computer vision module for detecting irregularities in production (PyTorch, Nvidia Triton Server, TensorRT, YoloV5, DeepSort, EfficientNet, Docker)
         - Development and deployment of a system for monitoring and controlling access to the office by face with an additional module of temperature analysis (PyTorch, RetinaFace, Docker)
@@ -29,7 +29,7 @@
     - title: Mentor
       institution: <a href="https://ai.itmo.ru/">AI Talent Hub</a>
       year: 2022
-      descriptioniption:
+      description:
         - Providing expert guidance to students on deep learning and computer vision-related matters
         - Conducting thorough evaluations of students' final project submissions
 
@@ -40,12 +40,12 @@
     - title: MSc
       institution: Saint Petersburg National Research University of Information Technologies, Mechanics and Optics (ITMO), Russia
       year: 2022 - present
-      descriptioniption:
+      description:
         - Specialized in deep learning and generative AI
     - title: BSc
       institution: South Ural State University (SUSU), Russia
       year: 2018 - 2022
-      descriptioniption:
+      description:
         - Specialized in computer science and mathematics
         - <b><i>GPA 4.97/5</i></b>
 
@@ -55,27 +55,27 @@
   contents:
     - title: <a href="https://github.com/Late-Dev/Educational-Video-Analytics">Educational Video Analytics</a>
       year: 2022
-      descriptioniption: "The system designed for use in educational institutions. It can recognise students' emotions in real-time through video. The following technologies were used in developing the system: face detector (RetinaFace), face tracker (DeepSort), emotion classifier (Deep Alignment Network)."
+      description: "The system designed for use in educational institutions. It can recognise students' emotions in real-time through video. The following technologies were used in developing the system: face detector (RetinaFace), face tracker (DeepSort), emotion classifier (Deep Alignment Network)."
     
     - title: <a href="https://github.com/MADE-Landmarks-Recognition/landmarks-search-app">Landmark Retrieval</a>
       year: 2022
-      descriptioniption: "A service for searching for similar landmarks based on a query image was developed. The training utilized a metric-learning approach. The final search is performed using FAISS."
+      description: "A service for searching for similar landmarks based on a query image was developed. The training utilized a metric-learning approach. The final search is performed using FAISS."
     
     - title: <a href="https://github.com/traptrip/yandex_cup_2022_audio_4th_place">Music Track Artist Search</a>
       year: 2022
-      descriptioniption: "A collection of anonymized acoustic features from music recordings has been provided. The objective is to identify the most suitable authors. In addition to classification, the model can also be used to evaluate the similarity between different artists and to distinguish different artists but with similar names."
+      description: "A collection of anonymized acoustic features from music recordings has been provided. The objective is to identify the most suitable authors. In addition to classification, the model can also be used to evaluate the similarity between different artists and to distinguish different artists but with similar names."
     
     - title: <a href="https://github.com/traptrip/ai-areal-photo">Aerial Photos Matching using Deep Learning</a>
       year: 2022
-      descriptioniption: "A model was developed that takes an image as input and determines its position and rotation angle on the substrate. The challenge lies in the possibility of the substrate and image being captured at different times of the year or with overlapping clouds."
+      description: "A model was developed that takes an image as input and determines its position and rotation angle on the substrate. The challenge lies in the possibility of the substrate and image being captured at different times of the year or with overlapping clouds."
     
     - title: <a href="https://github.com/traptrip/Speech_commands_recognition">Voice Commands Recognition</a>
       year: 2021
-      descriptioniption: "Various models were compared for classifying different voice commands, and the ensemble of ResNet18 and EfficientNetB0 showed the best performance. Mel-spectrograms were used as input features."
+      description: "Various models were compared for classifying different voice commands, and the ensemble of ResNet18 and EfficientNetB0 showed the best performance. Mel-spectrograms were used as input features."
 
     - title: <a href="https://github.com/traptrip/speaker_recognition_bot">Speaker Recognition Bot</a>
       year: 2020
-      descriptioniption: "A Telegram bot to remember and people by their voice. Speaker recognition is achieved by extracting unique voice features, storing them in a database, and using the K-Nearest Neighbors classifier to assess vector similarity during the inference stage."
+      description: "A Telegram bot to remember and people by their voice. Speaker recognition is achieved by extracting unique voice features, storing them in a database, and using the K-Nearest Neighbors classifier to assess vector similarity during the inference stage."
 
 
 - title: Publications
