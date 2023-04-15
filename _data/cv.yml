@@ -12,7 +12,7 @@
 - title: Interests
   type: list
   contents: 
-    - Computer vision, deep learning, natural language processing, ML ops
+    - Computer vision, deep learning, natural language processing, ml ops
 
 
 - title: Experience
@@ -38,13 +38,13 @@
   type: time_table
   contents:
     - title: MSc
-      institution: Saint Petersburg National Research University of Information Technologies, Mechanics and Optics (ITMO)
+      institution: Saint Petersburg National Research University of Information Technologies, Mechanics and Optics (ITMO), Russia
       year: 2022 - present
       description:
         - Specialized in deep learning and generative AI
     - title: BSc
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
+      institution: South Ural State University (SUSU), Russia
+      year: 2018 - 2022
       description:
         - Specialized in computer science and mathematics
         - <b><i>GPA 4.97/5</i></b>
