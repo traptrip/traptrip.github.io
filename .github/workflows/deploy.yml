@@ -19,8 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       # Edit here with the names of your latex file and directory (can use ".")
-      TEX_DIR: ./assets/tex
-      PDF_DIR: ./assets/pdf
+      DIR: ./assets/tex
       FILE: cv
     steps:
       - name: Checkout 🛎️
@@ -29,15 +28,26 @@ jobs:
         uses: dante-ev/latex-action@latest
         with:
           root_file: ${{ env.FILE }}
-          working_directory: ${{ env.TEX_DIR }}
+          working_directory: ${{ env.DIR }}
       - name: Move cv
-        run: mv ${{ env.TEX_DIR }}/${{ env.FILE }}.pdf ${{ env.PDF_DIR }}
+        run: mv ${{ env.DIR }}/${{ env.FILE }}.pdf ./github_artifacts
+      - name: Upload pdf as artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: ${{ env.FILE }}.pdf
+          path: ./github_artifacts
+
   deploy:
     needs: [build]
     runs-on: ubuntu-latest
     steps:
     - name: Checkout 🛎️
       uses: actions/checkout@v3
+    - uses: actions/download-artifact@v3
+      with:
+        path: github_artifacts
+    - name: Move github artifacts to assets
+      run: mv github_artifacts/*/* assets/pdf
     - name: Setup Ruby
       uses: ruby/setup-ruby@v1
       with:
