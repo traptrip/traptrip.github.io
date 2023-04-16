@@ -22,7 +22,7 @@
       institution: <a href="https://www.napoleonit.com/">Napoleon IT</a>
       year: aug 2019 - present
       description:
-        - Successfully enhanced the speed and quality of the retail store's product and price recognition system, resulting in a 20\% improvement in accuracy. (PyTorch, TensorFlow, OpenVino, Flask, XGBoost, Hydra, Docker, Metric Learning)
+        - Successfully enhanced the speed and quality of the retail store's product and price recognition system, resulting in a 20% improvement in accuracy. (PyTorch, TensorFlow, OpenVino, Flask, XGBoost, Hydra, Docker, Metric Learning)
         - Development and deployment of a computer vision module for detecting irregularities in production (PyTorch, Nvidia Triton Server, TensorRT, YoloV5, DeepSort, EfficientNet, Docker)
         - Development and deployment of a system for monitoring and controlling access to the office by face with an additional module of temperature analysis (PyTorch, RetinaFace, Docker)
         - Development of a system that counts unique visitors to the store through the use of a video camera (PyTorch, OpenCV, Docker)
