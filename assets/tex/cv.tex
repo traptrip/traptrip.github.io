@@ -1,0 +1,260 @@
+%-----------------------------------------------------------------------------------------------------------------------------------------------%
+%	The MIT License (MIT)
+%
+%	Copyright (c) 2021 Jitin Nair
+%
+%	Permission is hereby granted, free of charge, to any person obtaining a copy
+%	of this software and associated documentation files (the "Software"), to deal
+%	in the Software without restriction, including without limitation the rights
+%	to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+%	copies of the Software, and to permit persons to whom the Software is
+%	furnished to do so, subject to the following conditions:
+%	
+%	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+%	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+%	FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+%	AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+%	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+%	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+%	THE SOFTWARE.
+%	
+%
+%-----------------------------------------------------------------------------------------------------------------------------------------------%
+
+%----------------------------------------------------------------------------------------
+%	DOCUMENT DEFINITION
+%----------------------------------------------------------------------------------------
+
+% article class because we want to fully customize the page and not use a cv template
+\documentclass[a4paper,12pt]{article}
+
+%----------------------------------------------------------------------------------------
+%	FONT
+%----------------------------------------------------------------------------------------
+
+% % fontspec allows you to use TTF/OTF fonts directly
+% \usepackage{fontspec}
+% \defaultfontfeatures{Ligatures=TeX}
+
+% % modified for ShareLaTeX use
+% \setmainfont[
+% SmallCapsFont = Fontin-SmallCaps.otf,
+% BoldFont = Fontin-Bold.otf,
+% ItalicFont = Fontin-Italic.otf
+% ]
+% {Fontin.otf}
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES
+%----------------------------------------------------------------------------------------
+\usepackage{url}
+\usepackage{parskip} 	
+
+%other packages for formatting
+\RequirePackage{color}
+\RequirePackage{graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[scale=0.9]{geometry}
+
+%tabularx environment
+\usepackage{tabularx}
+
+%for lists within experience section
+\usepackage{enumitem}
+
+% centered version of 'X' col. type
+\newcolumntype{C}{>{\centering\arraybackslash}X} 
+
+%to prevent spillover of tabular into next pages
+\usepackage{supertabular}
+\usepackage{tabularx}
+\newlength{\fullcollw}
+\setlength{\fullcollw}{0.47\textwidth}
+
+%custom \section
+\usepackage{titlesec}				
+\usepackage{multicol}
+\usepackage{multirow}
+
+%CV Sections inspired by: 
+%http://stefano.italians.nl/archives/26
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{10pt}{10pt}
+
+%for publications
+\usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
+
+%Setup hyperref package, and colours for links
+\usepackage[unicode, draft=false]{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
+\addbibresource{citations.bib}
+\setlength\bibitemsep{1em}
+
+%for social icons
+\usepackage{fontawesome5}
+
+%debug page outer frames
+%\usepackage{showframe}
+
+%----------------------------------------------------------------------------------------
+%	BEGIN DOCUMENT
+%----------------------------------------------------------------------------------------
+\begin{document}
+
+% non-numbered pages
+\pagestyle{empty} 
+
+%----------------------------------------------------------------------------------------
+%	TITLE
+%----------------------------------------------------------------------------------------
+
+% \begin{tabularx}{\linewidth}{ @{}X X@{} }
+% \huge{Your Name}\vspace{2pt} & \hfill \emoji{incoming-envelope} email@email.com \\
+% \raisebox{-0.05\height}\faGithub\ username \ | \
+% \raisebox{-0.00\height}\faLinkedin\ username \ | \ \raisebox{-0.05\height}\faGlobe \ mysite.com  & \hfill \emoji{calling} number
+% \end{tabularx}
+
+\begin{tabularx}{\linewidth}{@{} C @{}}
+\Huge{Andrei Popov} \\
+\Large{CV Engineer} \\[7.5pt]
+\href{https://github.com/traptrip}{\raisebox{-0.05\height}\faGithub\ traptrip} \ $|$ \ 
+\href{https://www.kaggle.com/traptrip}{\raisebox{-0.05\height}\faKaggle \ traptrip} \ $|$ \ 
+\href{https://linkedin.com/in/aspopov/}{\raisebox{-0.05\height}\faLinkedin\ aspopov} \ $|$ \ 
+\href{mailto:aletni@gmail.com}{\raisebox{-0.05\height}\faEnvelope \ aletni@gmail.com} \\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+% EXPERIENCE SECTIONS
+%----------------------------------------------------------------------------------------
+
+%Interests/ Keywords/ Summary
+\section{Summary}
+Experienced computer vision engineer with a strong background in developing and deploying machine learning systems for various applications. Have a proven track record of successfully executing projects in object detection, classification, and tracking. Proficient in Python, I have experience in using deep learning frameworks such as TensorFlow and PyTorch. Have a passion for utilizing my expertise in computer vision and machine learning to tackle complex problems and drive innovation. Seeking to apply my skills and experience to a challenging research role.
+
+%Experience
+\section{Work Experience}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Napoleon IT - \textit{ML Engineer}} & \hfill Aug 2019 - present \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+        \item[--] Successfully enhanced the speed and quality of the retail store's product and price recognition system, resulting in a 20\% improvement in accuracy. \textit{(PyTorch, TensorFlow, OpenVino, Flask, XGBoost, Hydra, Docker, Metric Learning)}
+        \item[--] Development and deployment of a computer vision module for detecting irregularities in production \textit{(PyTorch, Nvidia Triton Server, TensorRT, YoloV5, DeepSort, EfficientNet, Docker)}
+        \item[--] Development and deployment of a system for monitoring and controlling access to the office by face with an additional module of temperature analysis \textit{(PyTorch, RetinaFace, Docker)}
+        \item[--] Development of a system that counts unique visitors to the store through the use of a video camera \textit{(PyTorch, OpenCV, Docker)}
+    \end{itemize}
+    \end{minipage}
+}  \\ \\
+
+\textbf{AI Talent Hub - \textit{Mentor}} & \hfill Sep 2022 - Feb 2023 \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+        \item[--] Providing expert guidance to students on deep learning and computer vision-related matters
+        \item[--] Conducting thorough evaluations of students' final project submissions
+    \end{itemize}
+    \end{minipage}
+}  \\
+
+\end{tabularx}
+
+
+%----------------------------------------------------------------------------------------
+%	Projects
+%----------------------------------------------------------------------------------------
+\section{Projects}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Educational Video Analytics} & \hfill \href{https://github.com/Late-Dev/Educational-Video-Analytics}{Source code} \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{
+The system designed for use in educational institutions. It can recognise students' emotions in real-time through video. The following technologies were used in developing the system: face detector (RetinaFace), face tracker (DeepSort), emotion classifier (Deep Alignment Network).} \\
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Landmark Retrieval} & \hfill \href{https://github.com/MADE-Landmarks-Recognition/landmarks-search-app}{Source code} \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{
+A service for searching for similar landmarks based on a query image was developed. The training utilized a metric-learning approach. The final search is performed using FAISS.
+}  \\
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Music Track Artist Search} & \hfill \href{https://github.com/traptrip/yandex_cup_2022_audio_4th_place}{Source code} \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{
+A collection of anonymized acoustic features from music recordings has been provided. The objective is to identify the most suitable authors. In addition to classification, the model can also be used to evaluate the similarity between different artists and to distinguish different artists but with similar names.
+}  \\
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Speaker Recognition Bot} & \hfill \href{https://github.com/traptrip/speaker_recognition_bot}{Source code} \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{
+A Telegram bot to remember and people by their voice. Speaker recognition is achieved by extracting unique voice features, storing them in a database, and using the K-Nearest Neighbors classifier to assess vector similarity during the inference stage.
+}  \\
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Aerial Photos Matching using Deep Learning} & \hfill \href{https://github.com/traptrip/ai-areal-photo}{Source code} \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{
+A model was developed that takes an image as input and determines its position and rotation angle on the substrate. The challenge lies in the possibility of the substrate and image being captured at different times of the year or with overlapping clouds.
+}  \\
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Voice Commands Recognition} & \hfill \href{https://github.com/traptrip/Speech_commands_recognition}{Source code} \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{
+Various models were compared for classifying different voice commands, and the ensemble of ResNet18 and EfficientNetB0 showed the best performance. Mel-spectrograms were used as input features.
+}  \\
+\end{tabularx}
+
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+\section{Education}
+\begin{tabularx}{\linewidth}{@{}l X@{}}	
+2022 - present & Master's in \textbf{Deep Learning and Generative AI} from \textbf{ITMO} \hfill \normalsize (GPA: 4.8/5.0) \\
+2021 - 2022 & \textbf{Data Science} specialization from Big Data Academy \hfill \normalsize \href{https://data.vk.company/curriculum/certificates/download/5013/d55bb369-58ba-46e3-b9e3-9202797b0bee/}{Certificate}\\
+2018 - 2022 & Bachelor's in Computer Science from \textbf{South Ural State University} \hfill \normalsize  (GPA: 4.97/5.0) \\ 
+
+\end{tabularx}
+
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS
+%----------------------------------------------------------------------------------------
+\section{Publications}
+\begin{refsection}[citations.bib]
+\nocite{*}
+\printbibliography[heading=none]
+\end{refsection}
+
+
+%----------------------------------------------------------------------------------------
+%	SKILLS
+%----------------------------------------------------------------------------------------
+\section{Skills}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+Programming language \& platforms &  \normalsize{Python, Linux, MacOS}\\
+Scientific computing libraries &  \normalsize{NumPy, Pandas, Matplotlib, Plotly}\\  
+Computer vision libraries &  \normalsize{OpenCV, TorchVision, Timm}\\  
+Deep learning frameworks &  \normalsize{PyTorch, TensorFlow, Transformers}\\  
+Development \& deployment &  \normalsize{Flask, FastAPI, Docker, Nvidia Triton Server}\\  
+Version control &  \normalsize{Git, GitLab, DVC, MLflow, ClearML}\\ 
+Soft skills & \normalsize{Ability to work independently and in a team setting, strong communication skills, the ability to present technical information to non-technical audiences}
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	AWARDS
+%----------------------------------------------------------------------------------------
+\section{Awards}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+Digital Breakthrough 2022 &  \normalsize{1st place in a track "AI to identify students' emotions"}\\
+Digital Breakthrough 2022 &  \normalsize{2d place in a track "Aerial Photos Matching"}\\
+AI Journey Contest 2022 & \normalsize{2d place in a track "Multilingual translation from national languages"} \\
+Kaggle &  \normalsize{Notebooks Expert}
+\end{tabularx}
+
+
+\vfill
+
+\end{document}
