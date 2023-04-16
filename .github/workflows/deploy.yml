@@ -23,14 +23,14 @@ jobs:
       PDF_DIR: ./assets/pdf
       FILE: cv
     steps:
-      - name: Set up Git repository
+      - name: Checkout 🛎️
         uses: actions/checkout@v3
-      - name: cv
+      - name: Create cv
         uses: dante-ev/latex-action@latest
         with:
           root_file: ${{ env.FILE }}
           working_directory: ${{ env.TEX_DIR }}
-      - name: move
+      - name: Move cv
         run: mv ${{ env.TEX_DIR }}/${{ env.FILE }}.pdf ${{ env.PDF_DIR }}
   deploy:
     needs: [build]
