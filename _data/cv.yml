@@ -84,8 +84,8 @@
     - year: 2021
       description: <u><i>Popov, Andrey S</u></i>. and Ivanov, Sergey A. Neural Network Models for Russian Language Speaker Recognition. (2021) 2021 International Conference on Quality Management, Transport and Information Security, Information Technologies (IT&QM&IS)
     
-    - title: <a class="font-weight-bold" href="https://habr.com/ru/post/687646/">How computer vision helps determine the coordinates of satellite images</a> 
-      institution: article on <a class="font-weight-bold" href="https://habr.com">Habr.com</a>
+    - title: <a href="https://habr.com/ru/post/687646/">How computer vision helps determine the coordinates of satellite images</a> 
+      institution: article on <a href="https://habr.com">Habr.com</a>
       year: 2022
       description: This article covers how to won the second place in the Digital Breakthrough contest with a solution for automating photo georeferencing. The main insight is that basic solutions are not always good and proven.
 
@@ -93,20 +93,20 @@
 - title: Competitions and Awards
   type: time_table
   contents:
-    - title: <a class="font-weight-bold" href="https://hacks-ai.ru/hackathons/757119/">Digital Breakthrough 2022 - "AI to identify students' emotions"</a> 
+    - title: <a href="https://hacks-ai.ru/hackathons/757119/">Digital Breakthrough 2022 - "AI to identify students' emotions"</a> 
       institution: <a href="https://hacks-ai.ru/">Hacks AI</a> 
       description: <b><i>1st place</i></b>
       year: 2022
 
-    - title: <a class="font-weight-bold" href="https://hacks-ai.ru/hackathons/757119/">Digital Breakthrough 2022 - "Aerial Photos Matching"</a> 
+    - title: <a href="https://hacks-ai.ru/hackathons/757119/">Digital Breakthrough 2022 - "Aerial Photos Matching"</a> 
       institution: <a href="https://hacks-ai.ru/">Hacks AI</a> 
       description: <b><i>2d place</i></b>
       year: 2022
 
-    - title: <a class="font-weight-bold" href="https://dsworks.ru/group/1a047e72-4791-45d0-8ee9-44ac9c43bf4b/">Multilingual translation from national languages</a> 
+    - title: <a href="https://dsworks.ru/group/1a047e72-4791-45d0-8ee9-44ac9c43bf4b/">Multilingual translation from national languages</a> 
       institution: <a href="https://ai-journey.ru//">AI Journey</a> 
       description: <b><i>2nd place</i></b>
       year: 2022
 
-    - title: <a class="font-weight-bold" href="https://www.kaggle.com/traptrip">Kaggle - Notebooks Expert</a> 
+    - title: <a href="https://www.kaggle.com/traptrip">Kaggle - Notebooks Expert</a> 
       institution: <a href="https://www.kaggle.com/">Kaggle</a> 
