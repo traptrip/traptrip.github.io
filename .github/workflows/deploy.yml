@@ -30,7 +30,7 @@ jobs:
           root_file: ${{ env.FILE }}
           working_directory: ${{ env.DIR }}
       - name: Move cv
-        run: mv ${{ env.DIR }}/${{ env.FILE }}.pdf ./github_artifacts
+        run: mv ${{ env.DIR }}/${{ env.FILE }}.pdf ./github_artifacts/${{ env.FILE }}.pdf
       - name: Upload pdf as artifact
         uses: actions/upload-artifact@v3
         with:
