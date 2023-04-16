@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: ML Engineer
+subtitle: <b>ML Engineer</b>
 
 profile:
   align: right
