@@ -94,17 +94,17 @@
   type: time_table
   contents:
     - title: <a class="font-weight-bold" href="https://hacks-ai.ru/hackathons/757119/">Digital Breakthrough 2022 - "AI to identify students' emotions"</a> 
-      institution: organized by <a href="https://hacks-ai.ru/">Hacks AI</a> 
+      institution: <a href="https://hacks-ai.ru/">Hacks AI</a> 
       description: <b><i>1st place</i></b>
       year: 2022
 
     - title: <a class="font-weight-bold" href="https://hacks-ai.ru/hackathons/757119/">Digital Breakthrough 2022 - "Aerial Photos Matching"</a> 
-      institution: organized by <a href="https://hacks-ai.ru/">Hacks AI</a> 
+      institution: <a href="https://hacks-ai.ru/">Hacks AI</a> 
       description: <b><i>2d place</i></b>
       year: 2022
 
     - title: <a class="font-weight-bold" href="https://dsworks.ru/group/1a047e72-4791-45d0-8ee9-44ac9c43bf4b/">Multilingual translation from national languages</a> 
-      institution: organized by <a href="https://ai-journey.ru//">AI Journey</a> 
+      institution: <a href="https://ai-journey.ru//">AI Journey</a> 
       description: <b><i>2nd place</i></b>
       year: 2022
 
