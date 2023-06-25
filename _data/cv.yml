@@ -93,6 +93,17 @@
 - title: Competitions and Awards
   type: time_table
   contents:
+
+    - title: <a href="https://leaders2023.innoagency.ru/task_5/">Leaders of Digital Transformation (task 5) - "Product Matching"</a> 
+      institution: <a href="https://leaders2023.innoagency.ru/">Leaders of Digital Transformation</a> 
+      description: <b><i>2nd place</i></b>
+      year: 2023
+
+    - title: <a href="https://ai-community.com/sibur-challenge-2023/">SIBUR Challenge - "Video Analytics"</a> 
+      institution: <a href="https://sibur.digital/">SIBUR Digital</a> 
+      description: <b><i>3rd place</i></b>
+      year: 2023
+
     - title: <a href="https://hacks-ai.ru/hackathons/757119/">Digital Breakthrough 2022 - "AI to identify students' emotions"</a> 
       institution: <a href="https://hacks-ai.ru/">Hacks AI</a> 
       description: <b><i>1st place</i></b>
