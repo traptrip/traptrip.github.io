@@ -25,7 +25,7 @@ jobs:
       - name: Checkout 🛎️
         uses: actions/checkout@v3
       - name: Create cv
-        uses: dante-ev/latex-action@v0.1.0
+        uses: dante-ev/latex-action@v0.2.0
         with:
           root_file: ${{ env.FILE }}
           working_directory: ${{ env.DIR }}
