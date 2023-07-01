@@ -21,4 +21,4 @@ learning systems for various applications. Have a proven track record of success
 in object detection, classification, and tracking. Proficient in Python, I have experience in using deep
 learning frameworks such as _TensorFlow_ and _PyTorch_. 
 
-Have a passion for utilizing my expertise in computer vision and machine learning to tackle complex problems and drive innovation. Seeking to apply my skills and experience to a challenging research role.
+Have a passion for utilizing my expertise in computer vision and machine learning to tackle complex problems and drive innovation. Seeking to apply my skills and experience to a challenging research  or engineering role.
