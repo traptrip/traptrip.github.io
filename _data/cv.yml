@@ -28,7 +28,7 @@
         - Development of a system that counts unique visitors to the store through the use of a video camera <i>(PyTorch, OpenCV, Docker)</i>
     - title: Mentor
       institution: <a href="https://ai.itmo.ru/">AI Talent Hub</a>
-      year: 2022
+      year: sep 2022 - present
       description:
         - Providing expert guidance to students on deep learning and computer vision-related matters
         - Conducting thorough evaluations of students' final project submissions
@@ -60,7 +60,11 @@
     - title: <a href="https://github.com/MADE-Landmarks-Recognition/landmarks-search-app">Landmark Retrieval</a>
       year: 2022
       description: "A service for searching for similar landmarks based on a query image was developed. The training utilized a metric-learning approach. The final search is performed using FAISS."
-    
+
+    - title: <a href="https://github.com/traptrip/yandex_cup_ml_2023">Music track tags prediction</a>
+      year: 2023
+      description: "A project for multi-label music track tags prediction. The tracks embeddings are used as input."
+
     - title: <a href="https://github.com/traptrip/yandex_cup_2022_audio_4th_place">Music Track Artist Search</a>
       year: 2022
       description: "A collection of anonymized acoustic features from music recordings has been provided. The objective is to identify the most suitable authors. In addition to classification, the model can also be used to evaluate the similarity between different artists and to distinguish different artists but with similar names."
@@ -93,6 +97,11 @@
 - title: Competitions and Awards
   type: time_table
   contents:
+
+    - title: <a href="https://yandex.ru/cup/ml//">Yandex Cup 23 - ML: RecSys"</a> 
+      institution: <a href="https://yandex.ru/cup/">Yandex Cup</a> 
+      description: <b><i>3rd place</i></b>
+      year: 2023
 
     - title: <a href="https://leaders2023.innoagency.ru/task_5/">Leaders of Digital Transformation (task 5) - "Products Matching"</a> 
       institution: <a href="https://leaders2023.innoagency.ru/">Leaders of Digital Transformation</a> 
